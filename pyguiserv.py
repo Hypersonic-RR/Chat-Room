@@ -1,6 +1,4 @@
 
-#!/usr/bin/env python3
-"""Server for multithreaded (asynchronous) chat application."""
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
 
@@ -15,7 +13,7 @@ def accept_incoming_connections():
         Thread(target=handle_client, args=(client,)).start()
 
 
-def handle_client(client):  # Takes client socket as argument.
+def handle_client(client): 
     """Handles a single client connection."""
 
     name = client.recv(BUFSIZ).decode("utf8")
@@ -37,7 +35,7 @@ def handle_client(client):  # Takes client socket as argument.
             break
 
 
-def broadcast(msg, prefix=""):  # prefix is for name identification.
+def broadcast(msg, prefix=""): 
     """Broadcasts a message to all the clients."""
 
     for sock in clients:
