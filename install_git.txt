@@ -1,0 +1,36 @@
+Assuming Python (e.g., Canopy) is already installed
+
+If you have not installed it yet, go here and install it and come back to continue.
+2. pip and distribute
+
+We'll use the Python tool easy_install to install pip. To get easy_install, download the distribute_setup.py by right clicking on it and run it by simply double clicking on it from your Downloads folder.
+
+If you used Canopy to install Python, you should now be able to run easy_install in a shell (from the command prompt). Canopy should have added the needed information to your system's path information. To check that everything is in order, open a command prompt and run:
+
+       easy_install
+
+It may ask you for username and password. If you get an error saying "error: No urls, filenames, or requirements specified (see --help)", then you're good to go - go to the Install PIP section below. This error is only saying you did not tell it what to install. If you got an error saying "'easy_install' is not recognized. . .", then proceed to the Modify Your Path section.
+3. Modify Your Path
+
+If you got the "not recognized" error, you need to add the easy_install command and other Python scripts to the command search path, by adding your Python installation's Scripts folder to the PATH environment variable. To do that, right-click on the Computer icon on the Desktop or in the Start menu, and choose Properties. Then click on Advanced System settings (in Windows XP, click on the Advanced tab instead). Then click on the Environment variables button. Finally, double-click on the Path variable in the System variables section, and add the path of your Python interpreter's Scripts folder. Be sure to delimit it from existing values with a semicolon (';'). Assuming you are using Python 2.7 on the default path, add the following value:
+
+       ;C:\Python27\Scripts
+
+For Canopy users, these will look like:
+
+       C:\Users\username\AppData\Local\Enthought\Canopy\User; C:\Users\username\AppData\Local\Enthought\Canopy\User\Scripts
+
+And you are done! To check that it worked, open the Command Prompt and execute c:\easy_install. If you have User Account Control enabled on Windows Vista or Windows 7, it should prompt you for administrator privileges.
+4. Install PIP
+
+Now that you have easy_install, you can use it to install pip with the following command on the command prompt. If you are not at the C:\ folder, you need to go to that folder to issue this command:
+
+       C:\easy_install pip
+
+Now, you are ready to install Flask.
+5. Install Flask
+
+You should use pip to install and deploy Flask. To install Flask generally on your system, give this command on the command prompt:
+
+       pip install flask, flask_sqlalchemy
+

@@ -1,0 +1,32 @@
+# to push changes:
+git add .
+git commit -m "Message"
+git push origin master
+
+# to pull  changes
+git pull origin master
+
+# incase it fails
+git stash #throws away the changes
+
+Incase of emergency call: 9007355023 or 7981107289
+
+# to make the database
+open cmd
+goto Documents\ShareMarket
+type python
+>>> inside the python shell
+>>> from run import db
+>>> db.create_all()
+>>> exit()
+
+then import data from the csv files into the tables
+
+
+# for new users
+intall python
+install DB Browser for SQLite
+open cmd in the current folder
+type the following :  pip install -r requirements.txt
+this should install all the required modules for running the program
+now your program is ready to use and modify!!
