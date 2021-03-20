@@ -11,7 +11,7 @@ Glances==2.3
 html5lib==0.999
 influxdb==2.12.0
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 lxml==3.5.0
 MarkupSafe==1.0
 netifaces==0.10.4
