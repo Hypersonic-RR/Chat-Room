@@ -8,7 +8,7 @@ docker-py==1.9.0
 Flask==1.0.2
 Flask-SQLAlchemy==2.3.2
 Glances==2.3
-html5lib==0.999
+html5lib==0.99999999
 influxdb==2.12.0
 itsdangerous==0.24
 Jinja2==2.10
